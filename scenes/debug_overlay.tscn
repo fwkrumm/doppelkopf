@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=4]
+
+[ext_resource type="Script" path="res://scripts/debug_overlay.gd" id="1"]
+
+[node name="DebugOverlay" type="Control"]
+script = ExtResource("1")
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Panel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -10.0
+offset_bottom = -10.0
+mouse_filter = 2
+
+[node name="Log" type="TextEdit" parent="Panel"]
+custom_minimum_size = Vector2(300, 120)
+anchor_right = 1.0
+anchor_bottom = 1.0
+wrap_mode = 1
+mouse_filter = 2

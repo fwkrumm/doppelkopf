@@ -1,0 +1,28 @@
+
+{
+  "name": "default_40",
+  "suits": ["CLUBS", "SPADES", "HEARTS", "DIAMONDS"],
+  "copies": 2,
+  "ranks": [10, 11, 12, 13, 14],
+  "include_bock_rounds": true,
+  "dulle_enabled": true,
+  "trump_suits": [],
+  "scoring": {
+    "default_point": 0,
+    "point_map": {
+      "14": 11,
+      "10": 10,
+      "13": 4,
+      "12": 3,
+      "11": 2
+    }
+  },
+  "rules": {
+    "re_kontra": true,
+    "solo": true,
+    "hochzeit": true,
+    "rufspiel": true,
+    "pflicht": true,
+    "schweinchen": true
+  }
+}

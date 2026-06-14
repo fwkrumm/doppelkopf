@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=4]
+
+[ext_resource type="Script" path="res://scripts/ui/rules_config.gd" id="1"]
+
+[node name="RulesConfig" type="Control"]
+script = ExtResource("1")
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Panel" type="Panel" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 10.0
+offset_right = -10.0
+offset_bottom = -10.0
+
+[node name="VBox" type="VBoxContainer" parent="Panel"]
+custom_minimum_size = Vector2(600, 400)
+offset_left = 6.0
+offset_top = 6.0
+offset_right = 606.0
+offset_bottom = 406.0
+
+[node name="Title" type="Label" parent="Panel/VBox"]
+text = "Rules Config"
+
+[node name="FileRow" type="HBoxContainer" parent="Panel/VBox"]
+custom_minimum_size = Vector2(0, 28)
+
+[node name="PathEdit" type="LineEdit" parent="Panel/VBox/FileRow"]
+text = "res://rules/default_rules.json"
+size_flags_horizontal = 3
+
+[node name="LoadBtn" type="Button" parent="Panel/VBox/FileRow"]
+text = "Load"
+
+[node name="SaveBtn" type="Button" parent="Panel/VBox/FileRow"]
+text = "Save As"
+
+[node name="ResetBtn" type="Button" parent="Panel/VBox/FileRow"]
+text = "Reset Defaults"
+
+[node name="Editor" type="TextEdit" parent="Panel/VBox"]
+custom_minimum_size = Vector2(600, 300)
+size_flags_vertical = 3
+text = "{}"

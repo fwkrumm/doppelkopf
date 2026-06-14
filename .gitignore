@@ -1,0 +1,5 @@
+.import/
+.godot/
+/.idea/
+*.import
+export_presets.cfg
