@@ -26,6 +26,7 @@ Next steps:
 
 # TODOs
 
+- add godot action workflow for tests
 - Stronger/Configurable AI
 - multi language support
 - network multiplayer
